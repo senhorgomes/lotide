@@ -18,8 +18,8 @@ const countLetters = function(word) {
       }
     }
   }
-  console.log(results);
+  return results;
 };
 
 
-countLetters("lighthouse in the house")
+console.log(countLetters("lighthouse in the house"));
