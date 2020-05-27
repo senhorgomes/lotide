@@ -12,15 +12,15 @@ const eqArrays = function(array1, array2) {
 };
 */
 const without = function(originalArray, removeFromArray) {
-  shortenedArray = [];
+  let shortenedArray = [];
   for (let i = 0; i < originalArray.length; i++) {
-    for (let q = 0; q < removeFromArray.length; q++){
+    for (let q = 0; q < removeFromArray.length; q++) {
       if (originalArray[i] !== removeFromArray[q]) {
         shortenedArray.push(originalArray[i]);
       }
     }
   }
-  return shortenedArray
+  return shortenedArray;
 };
 
 
