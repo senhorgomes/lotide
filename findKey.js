@@ -14,20 +14,7 @@ const findKey = function(object, callback) {
     }
   }
 }
-//
-//let bestMovies = [];
-//movieArr.forEach(movie => {
-//  if (callback(movie)) {
-//    bestMovies.push(movie.title)
-//  }
-//});
-//return bestMovies;
-//for (let input of array) {
-//  if (callback(input)) {
-//    return array.slice(0, array.indexOf(input));
-//  }
-//}
-//
+
 findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },
