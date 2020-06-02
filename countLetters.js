@@ -1,25 +1,17 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🚫🚫🚫 Assertion Failed: ${actual} !== ${expected}`);
-  }
-  
-};
-
 const countLetters = function(word) {
   const results = {};
   for (const letter of word) {
-    if (letter !== " ") {
-      if (results[letter]) {
+    if (letter !== " ") { //checks to see if 'letter' is a space, if it is, it skips it
+      if (results[letter]) { //If Key object exist, add one to that value.
         results[letter] += 1;
       } else {
-        results[letter] = 1;
+        results[letter] = 1; //If key does not exist, create it, and add a starting value of 1 to is
       }
     }
   }
   return results;
 };
 
-
-console.log(countLetters("lighthouse in the house"));
+module.exports = countLetters;
+//Sample test
+//console.log(countLetters("you are doing great"));
