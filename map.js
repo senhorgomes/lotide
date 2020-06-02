@@ -1,5 +1,5 @@
 const map = function(array, callback) {
-  const results = []; //Creates a new array of the first letter of each word in an element, from an existing array
+  const results = []; //Creates a new array of the first letter of each word in an element, from an existing array, or modifies the array with however you want
   for (let item of array) {
     results.push(callback(item));
   }
