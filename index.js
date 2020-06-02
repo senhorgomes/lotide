@@ -10,11 +10,11 @@ const findKey = require('./findKey');
 const findKeyByValue = require('./findKeyByValue');
 const head = require('./head');
 const letterPosition = require('./letterPosition');
-const  = require('./');
-const  = require('./');
-const  = require('./');
-const tail = require('./tail');
+const map = require('./map');
 const middle = require('./middle');
+const tail = require('./tail');
+const takeUntil = require('./takeUntil');
+const without = require('./without');
 
 module.exports = {
   assertArraysEqual: assertArraysEqual,
@@ -28,7 +28,9 @@ module.exports = {
   findKeyByValue: findKeyByValue,
   head: head,
   letterPosition: letterPosition,
-  
+  map: map,
+  middle: middle,
   tail: tail,
-  middle: middle
+  takeUntil: takeUntil,
+  without: without,without
 };
